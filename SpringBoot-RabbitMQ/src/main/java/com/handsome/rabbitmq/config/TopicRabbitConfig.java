@@ -5,6 +5,7 @@ import org.springframework.amqp.core.BindingBuilder;
 import org.springframework.amqp.core.Queue;
 import org.springframework.amqp.core.TopicExchange;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
 /**
  * TopicRabbitConfig
@@ -12,6 +13,7 @@ import org.springframework.context.annotation.Bean;
  * @author handsome
  * @date 2020年 06月17日 23:36:23
  */
+@Configuration
 public class TopicRabbitConfig {
 
 	final static String message = "topic.message";
